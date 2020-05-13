@@ -39,7 +39,7 @@ function prep() {
 
     if (minutes == 10 && seconds < 5 && tenMinNoti == false) {
 
-      var notification = new Notification('10 Minutes Remaining');
+      var notification = new Notification('10 Minutes Remaining', {icon: 'icon.png'});
 
       tenMinNoti = true
 
@@ -47,7 +47,7 @@ function prep() {
 
     if (minutes == 5 && seconds < 5 && fiveMinNoti == false) {
 
-      var notification = new Notification('5 Minutes Remaining');
+      var notification = new Notification('5 Minutes Remaining', {icon: 'icon.png'});
 
       fiveMinNoti = true
 
@@ -55,7 +55,7 @@ function prep() {
 
     if (minutes == 2 && seconds < 5 && twoMinNoti == false) {
 
-      var notification = new Notification('2 Minutes Remaining');
+      var notification = new Notification('2 Minutes Remaining', {icon: 'icon.png'});
 
       twoMinNoti = true
 
@@ -64,6 +64,8 @@ function prep() {
     if (distance < 0) {
 
       clearInterval(x);
+
+      var notification = new Notification('Time up!', {icon: 'icon.png'});
 
       document.getElementById("demo").innerHTML = "TIME UP";
 
@@ -106,7 +108,7 @@ function speech() {
 
     if (minutes == 2 && seconds < 5 && twoMinNoti == false) {
 
-      var notification = new Notification('2 Minutes Remaining');
+      var notification = new Notification('2 Minutes Remaining', {icon: 'icon.png'});
 
       twoMinNoti = true
 
@@ -114,7 +116,7 @@ function speech() {
 
     if (minutes == 1 && seconds < 5 && oneMinNoti == false) {
 
-      var notification = new Notification('1 Minute Remaining');
+      var notification = new Notification('1 Minute Remaining', {icon: 'icon.png'});
 
       oneMinNoti = true
 
@@ -123,6 +125,8 @@ function speech() {
     if (distance < 0) {
 
       clearInterval(x);
+
+      var notification = new Notification('Time up!', {icon: 'icon.png'});
 
       document.getElementById("demo").innerHTML = "TIME UP";
 
@@ -163,7 +167,7 @@ function intermission() {
 
     if (minutes == 0 && seconds < 30 && halfMinNoti == false) {
 
-      var notification = new Notification('30 Seconds Remaining');
+      var notification = new Notification('30 Seconds Remaining', {icon: 'icon.png'});
 
       halfMinNoti = true
 
@@ -172,6 +176,8 @@ function intermission() {
     if (distance < 0) {
 
       clearInterval(x);
+
+      var notification = new Notification('Time up!', {icon: 'icon.png'});
 
       document.getElementById("demo").innerHTML = "TIME UP";
 
@@ -212,7 +218,7 @@ function feedbackPrep() {
 
     if (minutes == 0 && seconds < 30 && halfMinNoti == false) {
 
-      var notification = new Notification('30 Seconds Remaining');
+      var notification = new Notification('30 Seconds Remaining', {icon: 'icon.png'});
 
       halfMinNoti = true
 
@@ -221,6 +227,8 @@ function feedbackPrep() {
     if (distance < 0) {
 
       clearInterval(x);
+
+      var notification = new Notification('Time up!', {icon: 'icon.png'});
 
       document.getElementById("demo").innerHTML = "TIME UP";
 
@@ -261,7 +269,7 @@ function feedbackSpeech() {
 
     if (minutes == 0 && seconds < 30 && halfMinNoti == false) {
 
-      var notification = new Notification('30 Seconds Remaining');
+      var notification = new Notification('30 Seconds Remaining', {icon: 'icon.png'});
 
       halfMinNoti = true
 
@@ -270,6 +278,8 @@ function feedbackSpeech() {
     if (distance < 0) {
 
       clearInterval(x);
+
+      var notification = new Notification('Time up!', {icon: 'icon.png'});
 
       document.getElementById("demo").innerHTML = "Done!";
 
