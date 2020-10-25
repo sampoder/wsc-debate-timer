@@ -4,7 +4,7 @@ A debate timer for World Scholars Cup style debates!
 
 ## Usage
 
-Visit this [website](https://debate-timer-wsc.sampoder.com/) to use the program.
+Visit this [website](https://debatetimer.now.sh/) to use the program.
 
 ## Technology Used
 
